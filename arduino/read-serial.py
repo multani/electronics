@@ -36,7 +36,7 @@ serial = Serial(args.tty, args.bauds)
 
 try:
     while True:
-        line = serial.readline().decode('ascii').rstrip("\n")
+        line = serial.readline().decode('utf-8').rstrip("\n")
         print(line)
 except KeyboardInterrupt:
     pass
